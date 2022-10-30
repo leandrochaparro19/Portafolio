@@ -1,0 +1,42 @@
+.header{
+    background: rgba(0, 0, 0, 0.33);
+    height: 2.5rem;
+    margin:0;
+}
+
+.header_nav{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+.header_nav_logo{   
+    display:block;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px white;
+    align-self: center;
+    padding-left: 2rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+.header_nav_lista{
+    display: flex;
+    align-self: center;
+    margin-right: 2rem;
+}
+
+.header_nav_lista_item{
+    list-style: none;
+}
+
+.header_nav_lista_item a{
+    text-decoration: none;
+    padding: 0 1rem;
+    color:antiquewhite;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header_nav_lista_item a:hover{
+    color: rgba(9, 9, 118, 0.857);
+    text-shadow: 1px 1px 5px white;
+}

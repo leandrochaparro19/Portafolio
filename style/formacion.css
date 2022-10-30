@@ -1,0 +1,41 @@
+.formacion{
+    display: flex;
+    flex-direction: column;
+    align-content:space-between;
+    align-items: center;
+    height: 100vh;
+}
+.formacion_academica{
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content:flex-start;
+
+    flex-wrap: wrap;
+}
+
+.formacion_items{
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.formacion_one{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.formacion_items_img{
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 1rem;
+    padding:2rem;
+}
+
+.formacion_items h4{
+    font-weight: 200;
+    color: rgb(47, 47, 47);
+    text-align: left;
+}

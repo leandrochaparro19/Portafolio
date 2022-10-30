@@ -1,0 +1,61 @@
+.pantallaInicio{
+    height: calc(100vh - 2.5rem);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuerpo_bienvenida{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    text-shadow: 1px 1px 5px white;
+    color:#000000;
+}
+
+.cuerpo_inicio{
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo_presentacion{
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.cuerpo_nombre{
+    color: rgba(9, 9, 118, 0.857);
+    text-shadow: 1px 1px 5px white;
+    padding:0.5rem 1rem 0 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.pantallaInicio_btn{
+    text-decoration: none;
+}
+.btn {
+    color: rgb(223, 220, 220);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5em 5em;
+    background: #3731ac30;
+    position: relative;
+    border:none;
+    border-radius: 2rem;
+    outline: 2px solid;
+    outline-color: rgba(49, 49, 172, 0.4);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-top: 2rem;
+}
+.btn:hover {
+    box-shadow: inset 0 0 10px rgba(53, 49, 172, 0.5), 0 0 10px rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 20px;
+    text-shadow: 5px 5px 10px #fff;
+}
