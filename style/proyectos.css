@@ -1,16 +1,62 @@
 .proyectos{
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     height: 100vh;
 }
 
+.proyecto_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(3, 33, 116, 0.548);
+    border-radius:10px 10px 0 0;
+}
+
+.proyectos_container{
+    display: flex;
+    width: 90%;
+    gap:5%;
+    margin-top: 2rem;
+}
+
 .proyectos_items{
-    width: 30vw;
+    width: 50%;
     height: 50vh;
-    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.proyectos_items:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(9, 9, 118, 0.857);
+    border-radius:10px;
 }
 
 .proyectos_items_img{
-    height: 50vh;
-    width: 50vw;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius:10px;
+}
+
+.proyectos_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.259);
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top:90%;
+    color: rgb(216, 215, 215);
+    font-weight: 700;
+    border-radius:0 0 10px 10px;
 }

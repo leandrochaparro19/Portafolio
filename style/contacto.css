@@ -7,13 +7,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
 }
 
 .contacto_mensaje{
     color: #3a393a;
-    margin:2rem;
+    margin:1rem;
     width: 460px;
     padding-left: 30px;
 }
@@ -101,6 +99,7 @@ span{
 .aviso{
 	font-size: 13px;  
 	color: #3a393a; 
+	margin:0;
 }
 
 

@@ -23,6 +23,7 @@
                 <li class="header_nav_lista_item"><a href="#skills">Skills</a></li>
                 <!--<li class="header_nav_lista_item"><a href="#hobbies">Hobbies</a></li>--> 
                 <li class="header_nav_lista_item"><a href="#formacion">Formacion</a></li>
+                <li class="header_nav_lista_item"><a href="#proyectos">Proyectos</a></li>
                 <li class="header_nav_lista_item"><a href="#contacto">Contactar</a></li>
             </ul>
         </nav>
@@ -39,9 +40,9 @@
         <section class="sobremi fondo" id="sobremi">
             <div class="sobremi_descripcion">
                 <h2>Desarrollador junior</h2>
-            <p class="sobremi_descripcion_texto">Soy estudiante de ingenieria en sistemas de informacion, aca fue donde me apasione con la programacion.
+            <p class="sobremi_descripcion_texto">Soy estudiante de ingenieria en sistemas de informacion, aca fue donde me apasione con la programacion. Aprendi a programar con c++ asi que es con este con el que me siento mas comodo, pero busco apreder y seguir desarrollandome profesionalmente.
             </p>
-            <a class="sobremi_descripcion_curriculum" target="_blank" href="./ejercicios-resueltos-de-smalltalk-pdf-free.pdf">curriculum.pdf</a>
+            <a class="sobremi_descripcion_curriculum" target="_blank" href="./curriculum.pdf">curriculum.pdf</a>
             </div>
             <div class="sobremi_foto"></div>
         </section>
@@ -126,16 +127,19 @@
         </div>
         </section>
 
-        <section class="proyectos fondo">
-            <div class="proyectos_items">
-                <h2>Encriptador</h2>
+        <section class="proyectos fondo" id="proyectos">
+            <h2 class="titulos" >Proyectos</h2>
+            <div class="proyectos_container">
+            <div class="proyectos_items" onclick="abrirEncriptador()">
+                <h2 class="proyecto_titulo">Encriptador</h2>
                 <img class="proyectos_items_img" src="./img/proyecto_encriptador.png" alt="Encriptador de texto">
-                <a href="https://leandrochaparro19.github.io/Encriptador/">Ver</a>
+                <div class="proyectos_texto">VER</div>
             </div>
-            <div class="proyectos_items">
-                <h2>Juego ahorcado</h2>
+            <div class="proyectos_items" onclick="abrirJuegoAhorcado()">
+                <h2 class="proyecto_titulo">Juego ahorcado</h2>
                 <img class="proyectos_items_img" src="./img/proyecto_juego_ahorcado.png" alt="juego ahorcado">
-                <a href="https://leandrochaparro19.github.io/Juego_Ahorcado/"></a>
+                <div class="proyectos_texto">VER</div>
+            </div>
             </div>
         </section>
         
@@ -164,15 +168,31 @@
                     <textarea name="Mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea> 
             
                 <button type="submit"  id="enviar"><p>Enviar</p></button>
-                <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.</p>	
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/">				
                 </form>
         </section>
     </main>
     <footer class="footer">
-        <P>lea_650@hotmail.com</P>
-        <p>&copy LeandroChaparro</p>
+        <div class="email">
+            <div class="redes_container">
+                <img class="redes_logo" src="./img/email.png" alt="email">
+            </div>
+            <P class="footer_text">lea_650@hotmail.com</P>
+        </div>  
+        <p class="footer_text">&copy LeandroChaparro</p>
+        <div class="redes">
+            <div class="redes_container">
+                <img class="redes_logo" src="./img/instagram.png" alt="instagram" onclick="abrirInstagram()">
+            </div>
+            <div class="redes_container">
+                <img class="redes_logo github_logo" src="./img/github contacto.png" alt="github" onclick="abrirGithub()">
+            </div>
+            <div class="redes_container">
+                <img class="redes_logo" src="./img/linkedin.png" alt="linkedin" onclick="abrirLinkedin()">
+            </div>
+        </div>
     </footer>
+    <script src="./script.js"></script>
     </body>
 </html>
